@@ -3,8 +3,8 @@ import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 
 
-const Nav = () => {
-    
+const Nav = (props) => {
+    console.log(props)
     return (
         <nav className="nav-buttons">
             <div className="nav-links">
@@ -17,7 +17,11 @@ const Nav = () => {
     )
 }
 
-const mapStateToProps = reduxState => reduxState
+const mapStateToProps = reduxState => {
+    const {username, profilePic} = reduxState
+    return {username, profilePic}
+    
+}
 
 export default connect(mapStateToProps)(Nav)
     

@@ -6,7 +6,7 @@ create table users (
 );
 
 create table posts (
-    id serial primary key,
+    post_id serial primary key,
     title varchar(45),
     img text,
     content text,

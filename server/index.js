@@ -20,7 +20,7 @@ app.use(
 app.post('/api/auth/register', ctrl.register)
 app.post('/api/auth/login', ctrl.login)
 
-// app.get('/api/posts/:userid',ctrl.getPosts)
+app.get('/api/posts/:userid',ctrl.getPosts)
 // app.post('api/post/:userid', ctrl.makePost)
 // app.get('/api/post/:postid', ctrl.getPost)
 

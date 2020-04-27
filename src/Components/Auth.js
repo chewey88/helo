@@ -44,21 +44,27 @@ class Auth extends Component {
         <div className="login-body">
 
             <div className="input-container">
-                <input 
+                <div>
+                <label>Username:</label>
+                <input
                 maxLength="100"
-                name="Username:"
+                name="username"
                 
                 onChange={(e) => {
-                    this.handleInput(e)
+                this.handleInput(e)
                 }}
                 />
+                </div>
+                <div>
+                <label>Password:</label>
                 <input
-                    type="password"
-                    name="Password:"
-                    onChange={(e) => {
-                        this.handleInput(e)
-                    }}
-                    />
+                type="password"
+                name="password"
+                onChange={(e) => {
+                this.handleInput(e)
+                }}
+                />
+                </div>
             </div>
                 <button
                     onClick={() => {
